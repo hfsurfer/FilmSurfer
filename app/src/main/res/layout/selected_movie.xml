@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+
+    >
+    <RelativeLayout
+
+        android:id="@+id/SelectedMovies" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/ImageView_MoviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:scaleType="fitXY"
+
+
+            />
+
+        <TextView
+            android:id="@+id/TextView_SelectedMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/ImageView_MoviePoster"
+            android:textColor="@color/Black"
+            />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.2"
+            android:rating="4.5"
+            android:layout_below="@+id/TextView_SelectedMovieTitle"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/TextView_MovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.9"
+            android:layout_below="@+id/TextView_SelectedMovieTitle"
+            android:layout_toRightOf="@+id/ratingBar"
+            android:layout_marginLeft="2dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <TextView
+            android:id="@+id/TextView_ReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Date"
+            android:layout_below="@+id/ratingBar"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/TextView_Genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genres"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:layout_below="@+id/TextView_ReleaseDate"/>
+
+        <TextView
+            android:id="@+id/TextView_SelectedMovieDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Movie Description"
+            android:textSize="30sp"
+            android:layout_below="@+id/TextView_Genres"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/TextView_SelectedMovieOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="0dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/TextView_SelectedMovieDescription"
+            />
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
